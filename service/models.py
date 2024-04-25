@@ -199,7 +199,8 @@ class Product(db.Model):
         :return: a collection of Products with that name
         :rtype: list
 
-        """        logger.info("Processing name query for %s ...", name)
+        """
+        logger.info("Processing name query for %s ...", name)
         return cls.query.filter(cls.name == name)
 
     @classmethod
@@ -208,7 +209,6 @@ class Product(db.Model):
 
         :param price: the price to search for
         :type name: float
-
         :return: a collection of Products with that price
         :rtype: list
 
