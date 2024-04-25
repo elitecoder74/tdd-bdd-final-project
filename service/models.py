@@ -199,8 +199,7 @@ class Product(db.Model):
         :return: a collection of Products with that name
         :rtype: list
 
-        """
-        logger.info("Processing name query for %s ...", name)
+        """        logger.info("Processing name query for %s ...", name)
         return cls.query.filter(cls.name == name)
 
     @classmethod
